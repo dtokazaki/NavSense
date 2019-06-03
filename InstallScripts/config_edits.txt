@@ -1,0 +1,2 @@
+enable_uart=1
+dtoverlay=pi3-miniuart-bt
