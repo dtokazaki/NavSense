@@ -13,7 +13,6 @@ sudo mv config.txt /boot/config.txt
 rm temp.txt
 
 # Google Coral Accelerator
-sudo apt-get install feh -y
 cd ~/
 wget https://dl.google.com/coral/edgetpu_api/edgetpu_api_latest.tar.gz -O edgetpu_api.tar.gz --trust-server-names
 mv edgetpu_api* edgetpu_api.tar.gz
