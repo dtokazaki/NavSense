@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # General
-sudo apt-get update
-sudo apt-get upgrade
-sudo rpi-update
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo rpi-update -y
 
 # TFMini
 sudo mv /boot/config.txt temp.txt
@@ -12,7 +12,7 @@ sudo mv config.txt /boot/config.txt
 rm temp.txt
 
 # Google Coral Accelerator
-sudo apt-get install feh
+sudo apt-get install feh -y
 cd ~/
 wget https://dl.google.com/coral/edgetpu_api/edgetpu_api_latest.tar.gz -O edgetpu_api.tar.gz --trust-server-names
 mv edgetpu_api* edgetpu_api.tar.gz
@@ -29,7 +29,7 @@ sudo mv rc.local /etc/rc.local
 rm temp.txt
 
 # pyttsx
-sudo apt-get install espeak
+sudo apt-get install espeak -y
 pip3 install pyttsx3 
 
 
