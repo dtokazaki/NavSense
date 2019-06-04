@@ -4,6 +4,7 @@
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo rpi-update -y
+sudo apt-get install vim -y
 
 # TFMini
 sudo mv /boot/config.txt temp.txt
