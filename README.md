@@ -51,13 +51,13 @@ two of the buttons. The top pin of the swithc is connected to 3.3V, the
 middle to a GPIO pin, and the third to ground. The GPIO pin numbers and
 their functions are listed below:
 
-  GPIO Pin Number   Type     Function
-  ----------------- -------- ------------------------------------
-  3                 Button   Forces image capture and inference
-  11                Button   \<mode\>UP
-  29                Button   \<mode\>DOWN
-  32                Button   Power Off
-  35                Switch   \<mode\>= Volume/Speaking Speed
+| GPIO Pin Number | Type   | Function                           |
+|-----------------|--------|------------------------------------|
+| 3               | Button | Forces image capture and inference |
+| 11              | Button | <mode> UP                          |
+| 29              | Button | <mode> DOWN                        |
+| 32              | Button | Power Off                          |
+| 35              | Switch | <mode> Volume/Speaking Speed       |
 
 Installing Software
 -------------------
@@ -67,7 +67,7 @@ To begin with, download the Raspian Stretch operating system on a
 personal computer. There are plenty of online resources explaining how
 to download and install this OS on a Raspberry Pi. Finish the
 installation on the Raspberry Pi before continuing with the following
-steps (including the restart). Follow these steps (Listing B.1) in a
+steps (including the restart). Follow these steps in a
 terminal window to complete the installation of software for NavSense:
 
 ``` {.bash language="bash" caption="Getting Started with NavSense Installation"}
@@ -77,7 +77,7 @@ cd NavSense/InstallScripts/
 bash ./Install.sh
 ```
 
-The install script (Listing B.2) does the following: updates the
+The install script does the following: updates the
 Raspberry Pi, enables UART (necessary for the TFMini), installs the
 Google Edge TPU API, edits a config file so NavSense runs on bootup, and
 finally installs the text-to-speech library (pyttsx). At one point, the
@@ -96,9 +96,8 @@ TFMini. To do so, follow these commands on a terminal:\
 With all of this finished, the NavSense program should start on reboot.
 As long as all hardware components are connected in the right places,
 NavSense should be fully functional. Below is the full bash script that
-can also be found in the NavSense git repository (Listing B.2). To run
-the program manually (as opposed to only on reboot), view Listing B.3
-below.
+can also be found in the NavSense git repository. To run
+the program manually (as opposed to only on reboot)
 
 ``` {.bash language="bash" caption="Installation Script for NavSense"}
 #!/bin/bash
